@@ -49,10 +49,10 @@
 
 .hero__list-item {
   margin-bottom: 20px;
-}
 
-.hero-list-item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 .hero__list-span {
