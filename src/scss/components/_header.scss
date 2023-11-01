@@ -6,10 +6,10 @@
   width: 100%;
   border-bottom: gray 1px solid;
   transition: all 0.5s linear;
-}
 
-.header.active {
-  background-color: rgb(10, 10, 10);
+  &.active {
+    background-color: rgb(10, 10, 10);
+  }
 }
 
 .header-img {
@@ -19,18 +19,49 @@
 .header-logo {
   width: 380px;
   transition: all 0.5s linear;
+
+  &.active {
+    width: 250px;
+  }
 }
 
-.header-logo.active {
-  width: 250px;
+.nav__item {
+  position: relative;
+  background-color: aqua;
+  padding: 20px;
+
+  &:hover {
+    .nav__submenu {
+      display: block;
+    }
+  }
 }
 
-.nav {
+.nav__list {
   display: flex;
   font-size: 30px;
   gap: 45px;
+  list-style: none;
 }
 
 .nav-link {
   color: white;
+}
+
+// Dropdown links
+.nav__submenu {
+  position: absolute;
+  // display: none;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: white;
+  list-style: none;
+  top: 88px;
+  left: 0px;
+}
+
+.nav__submenu-link {
+  color: rgb(184, 54, 54);
+  width:max-content;
+  display: inline-block;
 }
