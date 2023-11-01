@@ -1,0 +1,22 @@
+button {
+  background-color: #ce2e06;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 8px;
+  padding: 10px 25px;
+  display: flex;
+}
+
+.hero__btn {
+  align-items: flex-end;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.services__btn {
+  font-size: 20px;
+  margin-top: auto;
+  display: block;
+  align-self: flex-start;
+}
