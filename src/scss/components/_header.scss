@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  top: 0px;
+  padding: 10px 0;
+  z-index: 1;
+  width: 100%;
+  border-bottom: gray 1px solid;
+  transition: all 0.5s linear;
+}
+
+.header.active {
+  background-color: rgb(10, 10, 10);
+}
+
+.header-img {
+  max-width: 100%;
+}
+
+.header-logo {
+  width: 380px;
+  transition: all 0.5s linear;
+}
+
+.header-logo.active {
+  width: 250px;
+}
+
+.nav {
+  display: flex;
+  font-size: 30px;
+  gap: 45px;
+}
+
+.nav-link {
+  color: white;
+}
