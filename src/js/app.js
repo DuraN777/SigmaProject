@@ -2,6 +2,8 @@ const heroButton = document.querySelector(".hero__btn");
 const heroList = document.querySelector(".hero__list");
 const header = document.querySelector(".header");
 const headerLogo = document.querySelector(".header-logo");
+const navSubmenu = document.querySelector(".nav__submenu");
+const navItems = document.querySelectorAll(".nav__item");
 
 heroButton.addEventListener('click', function () {
   
@@ -31,8 +33,16 @@ window.onscroll = function(){
   if(top >= 40) {
     header.classList.add("active");
     headerLogo.classList.add("active");
+    navSubmenu.classList.add("active");
+    navItems.forEach(item => {
+      item.classList.add("active");
+    })
   }else {
     header.classList.remove("active");
     headerLogo.classList.remove("active");
+    navSubmenu.classList.remove("active");
+    navItems.forEach(item => {
+      item.classList.remove("active");
+    })
   }
 }

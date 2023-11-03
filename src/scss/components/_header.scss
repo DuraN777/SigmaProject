@@ -1,7 +1,6 @@
 .header {
   position: fixed;
   top: 0px;
-  padding: 10px 0;
   z-index: 1;
   width: 100%;
   border-bottom: gray 1px solid;
@@ -27,9 +26,12 @@
 
 .nav__item {
   position: relative;
-  background-color: aqua;
-  padding: 20px;
+  padding: 60px 0px;
+  transition: all 0.5s linear;
 
+  &.active {
+    padding: 35px 0;
+  }
   &:hover {
     .nav__submenu {
       display: block;
@@ -51,17 +53,45 @@
 // Dropdown links
 .nav__submenu {
   position: absolute;
-  // display: none;
-  padding: 10px;
+  display: none;
+  padding: 20px 30px;
   border-radius: 7px;
   background-color: white;
   list-style: none;
-  top: 88px;
-  left: 0px;
+  font-size: 28px;
+  text-align: center;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid gray;
+  transition: all 0.5s linear;
+
+  &.active {
+    position: absolute;
+    // display: none;
+    padding: 20px 30px;
+    border-radius: 7px;
+    background-color: white;
+    list-style: none;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.nav__submenu-item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 .nav__submenu-link {
-  color: rgb(184, 54, 54);
+  color: black;
   width:max-content;
+  width: max-content;
   display: inline-block;
+  font-size: 22px;
+  line-height: 1.1;
 }
