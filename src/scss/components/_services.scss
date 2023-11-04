@@ -1,6 +1,6 @@
 .services {
   background-color: $bright-gray;
-  padding: 200px 0;
+  padding: 100px 0;
 }
 
 .services__title {
@@ -12,6 +12,7 @@
 .services__box-wrap {
   display: flex;
   justify-content:space-between;
+  flex-wrap: wrap;
   width: 100%;
   /* text-align: center; */
   gap: 50px;
