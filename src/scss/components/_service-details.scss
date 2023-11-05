@@ -19,27 +19,27 @@
 }
 
 .list-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
   margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(MIN(200px, 100%), 1fr));
+  background-color: $arctic;
+  gap: 20px;
 }
 
-.list-container__box {
-  flex: 0 1 300px;
+.list-box {
+  // flex: 0 1 300px;
   border: 2px $arctic solid;
+  background-color: white;
 }
 
-.list-container__box-title {
+.list-box__title {
   margin-bottom: 10px;
 }
 
-.list-container__box-item {
-  margin: 10px 0;
+.list-box__item {
+  margin: 10px;
 }
 
-
-.sublist-list {
-  padding: 0 0 0 20px;
+.sublist-item {
+  margin: 10px;
 }
