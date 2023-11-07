@@ -24,12 +24,13 @@
 .hero__btn {
   align-items: flex-end;
   gap: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .hero__list {
   color: $orange;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 1.1;
   background-color: $blackOp06;
   background-blend-mode: multiply;
   padding: 20px 40px;
