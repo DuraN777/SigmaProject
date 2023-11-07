@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding: 300px 0 100px;
+  padding: 300px 0 150px;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat; 
@@ -17,8 +17,7 @@
 .hero__title {
   color: $white;
   text-align: center;
-  font-size: 56px;
-  max-width: 900px;
+  padding: 0 50px;
   margin-bottom: 100px;
 }
 

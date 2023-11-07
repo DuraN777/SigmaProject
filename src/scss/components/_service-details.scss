@@ -1,23 +1,29 @@
 .service-details {
-  padding: 100px 0px;
+  padding: 150px 0px;
 }
 
-.service-detils__left {
-  color: $white;
-  background-color: $arctic;
-  padding: 50px 50px;
-  border-radius: 8px;
+.service-details__top {
+  display: flex;
+  flex-direction: row;
+}
+
+.service-details__top-text {
+  flex: 1 1 0;
+}
+
+.service-details__top-img {
+  flex: 1 1 0;
+  width: 100%;
 }
 
 .service-details__title {
-  font-size: 36px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .service-details__subtitle {
+  display: block;
   font-size: 28px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .service-details__text {
