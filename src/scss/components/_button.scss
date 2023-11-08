@@ -6,6 +6,16 @@ button {
   border-radius: 8px;
   padding: 10px 25px;
   display: flex;
+  transition: background 0.5s ease-in;
+
+  &:hover {
+    transform: scale(0.99);
+    background: linear-gradient(120deg, #2196f3, transparent) $arctic;
+  }
+
+  @include laptop{
+    font-size: 22px;
+  }
 }
 
 .hero__btn {
@@ -19,4 +29,9 @@ button {
   margin-top: auto;
   display: block;
   align-self: flex-start;
+
+  @include laptop {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
 }

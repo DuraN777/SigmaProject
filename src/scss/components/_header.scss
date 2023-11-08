@@ -22,6 +22,14 @@
   &.active {
     width: 250px;
   }
+
+  @include laptop {
+    width: 270px;
+
+    &.active {
+      width: 220px;
+    }
+  }
 }
 
 .nav__item {
@@ -37,6 +45,10 @@
       display: block;
     }
   }
+
+  @include laptop {
+    padding: 40px 0px;
+  }
 }
 
 .nav__list {
@@ -44,6 +56,10 @@
   font-size: 30px;
   gap: 45px;
   list-style: none;
+
+  @include laptop {
+    font-size: 24px;
+  }
 }
 
 .nav-link {
@@ -64,7 +80,6 @@
   border-radius: 7px;
   background-color: $white;
   list-style: none;
-  font-size: 28px;
   text-align: center;
   top: 150px;
   left: 50%;
@@ -81,6 +96,14 @@
     top: 100px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  @include laptop {
+    top: 104px;
+
+    &.active {
+      top: 94px;
+    }
   }
 }
 
@@ -103,5 +126,9 @@
 
   &:hover {
     transform: scale(1.01);
+  }
+
+  @include laptop {
+    font-size: 20px;
   }
 }
