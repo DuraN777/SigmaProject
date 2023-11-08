@@ -16,7 +16,6 @@ heroButton.addEventListener('click', function () {
     heroList.classList.add('visuallyhidden');    
     heroList.addEventListener('transitionend', function(e) {
       heroList.classList.add('hidden');
-      console.log("trnsitioned");
     }, {
       capture: false,
       once: true,
