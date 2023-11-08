@@ -45,7 +45,7 @@
 
 .list-box {
   background-color: rgba(208, 47, 6, 1);
-  padding: 30px 15px 10px;
+  padding: 30px 15px 15px;
   border-radius: 7px;
   color: white;
   height: max-content;
@@ -53,8 +53,8 @@
 }
 
 .list-box__title {
-  margin-bottom: 20px;
-  font-size: 22px;
+  margin-bottom: 25px;
+  font-size: 24px;
 }
 
 .list-box__item {
@@ -62,9 +62,13 @@
   font-size: 18px;
 }
 
-.sublist-item {
-  margin: 10px;
-  font-size: 18px;
+
+.list-box__sublist-title {
+  font-size: 21px;
+  list-style: none;
+}
+.list-box__ul {
+  padding-left: 10px;
 }
 
 .list-box__ul--flex {
@@ -74,10 +78,6 @@
   align-items: baseline;
   gap: 50px;
 }
-
-// .list-box__item--flex {
-//   flex: 1 1 0;
-// }
 
 .list-box--special {
   flex-basis: 48%;
