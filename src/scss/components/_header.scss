@@ -30,6 +30,15 @@
       width: 220px;
     }
   }
+
+  @include tablet {
+    width: 200px;
+
+    &.active {
+      width: 170px;
+    }
+  }
+  
 }
 
 .nav__item {
@@ -49,6 +58,14 @@
   @include laptop {
     padding: 40px 0px;
   }
+
+  @include tablet {
+    padding: 30px 0;
+
+    &.active {
+      padding: 25px 0;
+    }
+  }
 }
 
 .nav__list {
@@ -59,6 +76,11 @@
 
   @include laptop {
     font-size: 24px;
+  }
+
+  @include tablet {
+    font-size: 20px;
+    gap: 15px;
   }
 }
 
@@ -103,6 +125,14 @@
 
     &.active {
       top: 94px;
+    }
+  }
+
+  @include tablet {
+    top: 80px;
+
+    &.active {
+      top: 70px;
     }
   }
 }

@@ -16,6 +16,10 @@
   @include laptop {
     padding: 250px 0 100px;
   }
+
+  @include tablet {
+    padding: 180px 0 100px;
+  }
 }
 
 .hero__title {

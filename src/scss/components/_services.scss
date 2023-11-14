@@ -22,6 +22,10 @@
   flex-wrap: wrap;
   width: 100%;
   gap: 30px;
+
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 .services__box {
@@ -37,11 +41,7 @@
 }
 
 .services__box-title {
-  margin-bottom: 20px;
-
-  @include laptop {
-    margin-bottom: 15px;
-  }
+  margin-bottom: 25px;
 }
 
 .services__box::after {
@@ -67,4 +67,47 @@
 
 .services__box-img {
   width: 100%;
+
+  @include tablet {
+    object-fit: contain;
+    width: 50%;
+  }
+}
+
+.services__btn--laptop {
+  @include tablet {
+    display: none;
+  }
+}
+
+.services__btn--tablet {
+  display: none; 
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.flexing{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.flex-left {
+  margin-bottom: 15px;
+
+  @include tablet {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  
 }

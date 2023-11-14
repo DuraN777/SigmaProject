@@ -12,6 +12,10 @@ h1 {
   @include laptop {
     font-size: 55px;
   }
+
+  @include tablet {
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -19,6 +23,10 @@ h2 {
 
   @include laptop {
     font-size: 44px;
+  }
+
+  @include tablet {
+    font-size: 34px;
   }
 }
 
