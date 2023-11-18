@@ -17,28 +17,3 @@ button {
     font-size: 22px;
   }
 }
-
-.hero__btn {
-  align-items: flex-end;
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-.services__btn {
-  font-size: 20px;
-  margin-top: auto;
-  display: block;
-  align-self: flex-start;
-
-  @include laptop {
-    font-size: 16px;
-    padding: 10px 15px;
-  }
-
-  @include tablet {
-        margin-top: 0;
-        display: block;
-        align-self: normal;
-        width: fit-content;
-  }
-}
