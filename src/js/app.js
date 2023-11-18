@@ -29,7 +29,7 @@ window.onscroll = function(){
   let top = window.scrollY;
   console.log(top);
 
-  if(top >= 40) {
+  if(top >= 100) {
     header.classList.add("active");
     headerLogo.classList.add("active");
     navSubmenu.classList.add("active");
