@@ -74,6 +74,25 @@
   }
 }
 
+.services__btn {
+  font-size: 20px;
+  margin-top: auto;
+  display: block;
+  align-self: flex-start;
+
+  @include laptop {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  @include tablet {
+        margin-top: 0;
+        display: block;
+        align-self: normal;
+        width: fit-content;
+  }
+}
+
 .services__btn--laptop {
   @include tablet {
     display: none;
@@ -86,6 +105,10 @@
   @include tablet {
     display: block;
   }
+}
+
+.services__link {
+  color: $white;
 }
 
 .flexing{
