@@ -1,14 +1,19 @@
 .service-details {
-  padding: 150px 0px;
+  padding: 100px 0px;
+  background-color: $arcticOp10;
+}
+
+.service-details:nth-child(even) {
+  background-color: $bright-gray;
 }
 
 .service-details__top {
   display: flex;
   flex-direction: row;
-  gap: 20px;
   margin-bottom: 50px;
   box-shadow: 0px 0px 10px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02, 2px 2px 5px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02;
-  padding: 20px;
+  border-radius: 8px;
+  background-color: $white;
 }
 
 .service-details__top-text {
@@ -16,6 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px;
 }
 
 .service-details__top-img {
@@ -25,10 +31,12 @@
 }
 
 .service-details__title {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+  text-align: center;
+  color: $orange;
 
   @include laptop {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     // font-size: 36px;
   }
 }
@@ -44,7 +52,7 @@
 }
 
 .service-details__text {
-  font-size: 26px;
+  font-size: 25px;
   line-height: 1.2;
 
   @include laptop {
@@ -62,7 +70,7 @@
 
 .list-box {
   box-shadow: 0px 0px 10px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02, 2px 2px 5px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02;
-  background-color: rgba(243, 243, 243, 0.7);
+  background-color: $white;
   padding: 30px 15px 15px;
   border-radius: 7px;
   color: $black;
