@@ -5,6 +5,11 @@ const headerLogo = document.querySelector(".header-logo");
 const navSubmenu = document.querySelector(".nav__submenu");
 const navItems = document.querySelectorAll(".nav__item");
 
+const hamburger = document.querySelector('.header__hamburger');
+hamburger.addEventListener('click', ()=> {
+  hamburger.classList.toggle('header__hamburger--open');
+});
+
 heroButton.addEventListener('click', function () {
   
   if (heroList.classList.contains('hidden')) {

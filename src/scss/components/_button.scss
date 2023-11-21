@@ -1,6 +1,4 @@
 button {
-  background-color: $orange;
-  color: $white;
   cursor: pointer;
   font-size: 24px;
   border-radius: 8px;
@@ -8,12 +6,17 @@ button {
   display: flex;
   transition: background 0.5s ease-in;
 
+  @include laptop{
+    font-size: 22px;
+  }
+}
+
+.orange-btn {
+  background-color: $orange;
+  color: $white;
+
   &:hover {
     transform: scale(0.99);
     background: linear-gradient(120deg, #2196f3, transparent) $arctic;
-  }
-
-  @include laptop{
-    font-size: 22px;
   }
 }

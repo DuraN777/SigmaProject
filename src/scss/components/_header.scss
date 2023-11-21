@@ -41,6 +41,12 @@
   
 }
 
+.nav {
+  @include mobile {
+    display: none;
+  }
+}
+
 .nav__item {
   position: relative;
   padding: 60px 0px;
@@ -160,5 +166,65 @@
 
   @include laptop {
     font-size: 20px;
+  }
+}
+
+// Header hamburger menu
+
+
+.header__hamburger {
+  display: none;
+  background-color: transparent;
+
+  &.header__hamburger--open {
+    .header__hamburger-line {
+      height: 0;
+
+      &::before {
+        top: 0px;
+        transform: rotate(45deg);
+      }
+      &::after {
+        top: 0px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  @include mobile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+  }
+}
+
+.header__hamburger-line {
+  background-color: $white;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: $white;
+    transition: all .45s ease-in-out;
+    height: 3px;
+  }
+
+  &::before {
+    top: 10px;
+    transform: rotate(0);
+  }
+
+  &::after {
+    bottom: 10px;
   }
 }
