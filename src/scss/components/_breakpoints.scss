@@ -22,3 +22,9 @@ $breakpoints: (
         @content;
     }
 }
+
+@mixin laptop-sm {
+    @media (max-width: map-get($breakpoints, "laptop-sm")) {
+        @content;
+    }
+}

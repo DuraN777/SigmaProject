@@ -49,6 +49,10 @@
     font-size: 26px;
     margin-bottom: 10px;
   }
+
+  @include laptop-sm {
+    font-size: 22px;
+  }
 }
 
 .service-details__text {
@@ -58,6 +62,10 @@
   @include laptop {
     font-size: 22px;
     line-height: 1.1;
+  }
+
+  @include laptop-sm {
+    font-size: 16px;
   }
 }
 
@@ -80,6 +88,10 @@
 .list-box__title {
   margin-bottom: 25px;
   font-size: 24px;
+
+  @include laptop-sm {
+    font-size: 22px;
+  }
 }
 
 .list-box__title--centered {
@@ -89,12 +101,21 @@
 .list-box__item {
   margin: 20px 15px;
   font-size: 18px;
+
+  @include laptop-sm {
+    font-size: 16px;
+    margin: 10px;
+  }
 }
 
 
 .list-box__sublist-title {
   font-size: 21px;
   list-style: none;
+
+  @include laptop-sm {
+    font-size: 20px;
+  }
 }
 .list-box__ul {
   padding-left: 10px;
