@@ -102,6 +102,16 @@
   }
 }
 
+.list-box__text {
+  margin: 20px 5px;
+  font-size: 18px;
+
+  @include laptop-sm {
+    font-size: 16px;
+    margin: 10px;
+  }
+}
+
 .list-box__title--centered {
   text-align: center;
 }
