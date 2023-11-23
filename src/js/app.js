@@ -4,8 +4,14 @@ const header = document.querySelector(".header");
 const headerLogo = document.querySelector(".header-logo");
 const navSubmenu = document.querySelector(".nav__submenu");
 const navItems = document.querySelectorAll(".nav__item");
-
 const hamburger = document.querySelector('.header__hamburger');
+const heroSection = document.querySelector(".hero")
+const heroScroller = document.querySelector(".arrow-down");
+
+
+heroScroller.addEventListener("click", scrollToNextSection);
+
+
 hamburger.addEventListener('click', ()=> {
   hamburger.classList.toggle('header__hamburger--open');
 });
@@ -32,7 +38,6 @@ heroButton.addEventListener('click', function () {
 
 window.onscroll = function(){
   let top = window.scrollY;
-  console.log(top);
 
   if(top >= 100) {
     header.classList.add("active");
@@ -49,4 +54,12 @@ window.onscroll = function(){
       item.classList.remove("active");
     })
   }
+}
+
+function scrollToNextSection() {
+  const sectionCords = heroSection.getBoundingClientRect();
+  window.scrollTo({
+    top: sectionCords.bottom + window.scrollY,
+    behavior: "smooth",
+  });
 }

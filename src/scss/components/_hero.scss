@@ -74,3 +74,30 @@
 .hero__list-span {
   color: $white;
 }
+
+
+.arrow-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+}
+.arrow-down {
+  font-size: 50px;
+  color: $white;
+  z-index: 100;
+
+  animation: scroll 2s infinite ease;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
