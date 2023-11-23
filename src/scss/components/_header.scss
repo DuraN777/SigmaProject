@@ -13,6 +13,10 @@
 
 .header-img {
   max-width: 100%;
+
+  @include mobile {
+    padding: 6px 0 4px 0;
+  }
 }
 
 .header-logo {
@@ -193,10 +197,8 @@
 
   @include mobile {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
+    display: block;
+    width: 40px;
     height: 40px;
   }
 }
@@ -207,6 +209,7 @@
   height: 3px;
   position: absolute;
   top: 50%;
+  right: 0;
 
   &::before,
   &::after {
