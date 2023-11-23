@@ -22,12 +22,20 @@
   flex-direction: column;
   justify-content: center;
   padding: 20px;
+
+  @include tablet {
+    width: 100%;  
+  }
 }
 
 .service-details__top-img {
   width: 50%;
   border-radius: 8px;
   object-fit: contain;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .service-details__title {
