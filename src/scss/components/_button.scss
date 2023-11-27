@@ -1,19 +1,16 @@
-button {
+.orange-btn {
+  display: flex;
+  background-color: $orange;
+  color: $white;
+  padding: 10px 25px;
   cursor: pointer;
   font-size: 24px;
   border-radius: 8px;
-  display: flex;
   transition: background 0.5s ease-in;
 
   @include laptop{
     font-size: 22px;
   }
-}
-
-.orange-btn {
-  background-color: $orange;
-  color: $white;
-  padding: 10px 25px;
 
   &:hover {
     transform: scale(0.99);
