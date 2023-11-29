@@ -1,0 +1,83 @@
+.contact {
+  padding: 100px 0;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 20px;
+}
+
+.contact__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+
+  @include tablet {
+    gap: 30px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.contact__input {
+  width: 100%;
+  padding: 15px 20px 18px;
+  font-size: 24px;
+  line-height: 25px;
+  outline: none;
+  border: 1px solid $blackOp06;
+
+  &::placeholder {
+    color: $blackOp06;
+    letter-spacing: 1.5px;
+  }
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 18px 11px;
+  }
+
+  @include mobile {
+    width: 80%;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 15px 10px;
+  }
+}
+
+.contact__message {
+  background-color: transparent;
+  color: $white;
+  font-size: 24px;
+  line-height: 25px;
+  border: 1px solid $blackOp06;
+  outline: none;
+  padding: 18px 20px;
+  min-height: 180px;
+
+  &::placeholder {
+    color: $blackOp06;
+  }
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 18px 11px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 16px;
+    min-height: 160px;
+    padding: 16px 10px;
+    width: 80%;
+    align-self: center;
+  }
+}
