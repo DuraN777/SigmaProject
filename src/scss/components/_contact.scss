@@ -1,12 +1,15 @@
 .contact {
-  padding: 100px 0;
+  padding:100px 0 500px 0;
+  // background-color: $bright-gray;
 }
 
+.contact__title {
+  margin-bottom: 40px;
+}
 .contact__form {
   display: flex;
   flex-direction: column;
-  
-  gap: 20px;
+  gap: 40px;
 }
 
 .contact__row {
@@ -31,7 +34,8 @@
   font-size: 24px;
   line-height: 25px;
   outline: none;
-  border: 1px solid $blackOp06;
+  border: none;
+  border-bottom: 1px solid $blackOp06;
 
   &::placeholder {
     color: $blackOp06;
@@ -53,14 +57,15 @@
 }
 
 .contact__message {
-  background-color: transparent;
-  color: $white;
+  background-color: $white;
+  color: $black;
   font-size: 24px;
   line-height: 25px;
   border: 1px solid $blackOp06;
   outline: none;
   padding: 18px 20px;
   min-height: 180px;
+  margin-top: 20px;
 
   &::placeholder {
     color: $blackOp06;
