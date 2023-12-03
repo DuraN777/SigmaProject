@@ -18,6 +18,10 @@
   box-shadow: 0px 0px 10px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02, 2px 2px 5px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02;
   border-radius: 8px;
   background-color: $white;
+
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 .service-details__top-text {
@@ -38,7 +42,8 @@
   object-fit: contain;
 
   @include tablet {
-    display: none;
+    width: 100%;
+    max-height: 70%;
   }
 }
 
@@ -60,7 +65,7 @@
 
   @include laptop {
     font-size: 26px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   @include laptop-sm {
@@ -78,7 +83,7 @@
   }
 
   @include laptop-sm {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -95,7 +100,7 @@
   padding: 30px 15px 15px;
   border-radius: 7px;
   color: $black;
-  flex: 1 1 48%;
+  flex: 1 1 49%;
 }
 
 .list-box__title {
