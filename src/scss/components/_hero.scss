@@ -20,6 +20,10 @@
   @include tablet {
     padding: 180px 0 100px;
   }
+
+  @include mobile {
+    padding: 130px  0 80px;
+  }
 }
 
 .hero__title {
@@ -31,12 +35,20 @@
   @include laptop {
     padding: 0 20px;
   }
+
+  @include mobile {
+    margin-bottom: 50px;
+  }
 }
 
 .hero__btn {
   align-items: flex-end;
   gap: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include mobile {
+    font-size: 18px;
+  }
 }
 
 .hero__list {
@@ -52,6 +64,10 @@
 
   @include laptop-sm {
     font-size: 20px;
+  }
+
+  @include mobile {
+    font-size: 16px;
   }
 }
 

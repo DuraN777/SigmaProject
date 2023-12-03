@@ -1,5 +1,9 @@
 .about-us {
   padding: 100px 0;
+
+  @include mobile {
+    padding: 50px 0;
+  }
 }
 
 .about-us__title {

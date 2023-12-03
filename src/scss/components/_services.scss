@@ -1,6 +1,10 @@
 .services {
   background-color: $bright-gray;
   padding: 100px 0;
+
+  @include mobile {
+    padding: 50px 0;
+  }
 }
 
 .services__title {
