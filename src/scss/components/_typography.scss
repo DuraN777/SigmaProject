@@ -1,13 +1,14 @@
 body {
-  font-family:'Goldman', 'Courier New', Courier, monospace;
+  font-family:'Inter', 'Helvetica', Courier;
 }
 
 a,button {
-  font-family:'Goldman', 'Courier New', Courier, monospace;
+  font-family:'Inter', 'Courier New', Courier, monospace;
 }
 
 h1 {
   font-size: 70px;
+  font-weight: 700;
 
   @include laptop {
     font-size: 55px;
@@ -20,6 +21,7 @@ h1 {
 
 h2 {
   font-size: 50px;
+  font-weight: 600;
 
   @include laptop {
     font-size: 44px;
@@ -32,6 +34,7 @@ h2 {
 
 h3 {
   font-size: 36px;
+  font-weight: 500;
 
   @include laptop {
     font-size: 28px;
@@ -40,4 +43,5 @@ h3 {
 
 h4 {
   font-size: 28px;
+  font-weight: 500;
 }
