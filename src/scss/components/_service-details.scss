@@ -117,10 +117,6 @@
   }
 }
 
-.list-box__title--centered {
-  text-align: center;
-}
-
 .list-box__item {
   margin: 20px 15px;
   font-size: 18px;
@@ -142,16 +138,26 @@
 }
 .list-box__ul {
   padding-left: 10px;
+  // height: 0;
+  // overflow: hidden;
+
+  // &.active {
+  //   height: fit-content;
+  // }
 }
 
 .list-box__ul--flex {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: baseline;
-  gap: 50px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .list-box--special {
-  flex-basis: 100%;
+  @include laptop-sm {
+    flex-basis: 100%;
+  }
+  
 }
