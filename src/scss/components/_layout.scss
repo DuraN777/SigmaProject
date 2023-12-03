@@ -7,6 +7,12 @@
   @include tablet {
     padding: 0;
   }
+
+  @include mobile {
+    margin: 0;
+    width: auto;
+    padding: 10px;
+  }
 }
 
 .flex-row {
