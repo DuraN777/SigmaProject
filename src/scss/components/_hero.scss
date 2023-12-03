@@ -50,8 +50,8 @@
   transition: all 0.3s linear;
   display: block;
 
-  @include laptop {
-    font-size: 18px;
+  @include laptop-sm {
+    font-size: 20px;
   }
 }
 
