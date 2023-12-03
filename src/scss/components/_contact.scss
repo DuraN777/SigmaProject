@@ -36,6 +36,7 @@
   outline: none;
   border: none;
   border-bottom: 1px solid $blackOp06;
+  max-width: 600px;
 
   &::placeholder {
     color: $blackOp06;
@@ -85,4 +86,10 @@
     width: 80%;
     align-self: center;
   }
+}
+
+.contact__btn {
+  display: block;
+  width: fit-content;
+  padding: 15px 25px;
 }
