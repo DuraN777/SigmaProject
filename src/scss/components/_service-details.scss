@@ -11,6 +11,20 @@
   background-color: $bright-gray;
 }
 
+.service-details__title {
+  margin-bottom: 80px;
+  text-align: center;
+  color: $orange;
+
+  @include laptop {
+    margin-bottom: 60px;
+  }
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+}
+
 .service-details__top {
   display: flex;
   flex-direction: row;
@@ -44,17 +58,6 @@
   @include tablet {
     width: 100%;
     max-height: 70%;
-  }
-}
-
-.service-details__title {
-  margin-bottom: 80px;
-  text-align: center;
-  color: $orange;
-
-  @include laptop {
-    margin-bottom: 60px;
-    // font-size: 36px;
   }
 }
 
