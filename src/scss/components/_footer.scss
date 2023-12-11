@@ -1,0 +1,25 @@
+.footer {
+  background-color: $bright-gray;
+}
+
+.footer__row {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+.footer-nav__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
