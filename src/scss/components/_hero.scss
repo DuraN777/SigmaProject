@@ -97,6 +97,10 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 40px;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .arrow-down {
