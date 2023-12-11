@@ -101,6 +101,7 @@
 
   &:hover {
     transform: scale(1.07);
+    color: $orange;
   }
 }
 
@@ -166,6 +167,7 @@
 
   &:hover {
     transform: scale(1.01);
+    color: $orange;
   }
 
   @include laptop {

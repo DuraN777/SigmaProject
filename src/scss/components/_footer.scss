@@ -4,13 +4,20 @@
 
 .footer__row {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   justify-content: space-between;
   align-items: center;
 }
+.footer__logo{
+  padding: 6px 0;
+}
 
-.footer-logo {
+.footer__logo-img {
   width: 200px;
+  @include mobile {
+    width: 120px;
+  }
+
 }
 
 .footer-nav__list {
@@ -18,8 +25,27 @@
   gap: 20px;
   list-style: none;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  font-size: 20px;
 
   @include mobile {
-    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+  }
+}
+
+.footer-nav-link {
+  color: $black;
+  
+  &:hover {
+    color: $orange;
+  }
+  
+}
+
+.footer-nav__item {
+  transition: transform 0.3s ease-out;
+  &:hover {
+    transform: scale(1.1);
   }
 }
