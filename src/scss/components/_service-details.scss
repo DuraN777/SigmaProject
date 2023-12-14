@@ -120,15 +120,15 @@
   }
 }
 
-.list-box__text {
-  margin: 20px 5px;
-  font-size: 18px;
+// .list-box__text {
+//   margin: 20px 5px;
+//   font-size: 18px;
 
-  @include laptop-sm {
-    font-size: 16px;
-    margin: 10px;
-  }
-}
+//   @include laptop-sm {
+//     font-size: 16px;
+//     margin: 10px;
+//   }
+// }
 
 .list-box__item {
   margin: 20px 15px;
