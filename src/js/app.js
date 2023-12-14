@@ -1,16 +1,18 @@
-const heroButton = document.querySelector(".hero__btn");
-const heroList = document.querySelector(".hero__list");
+// Header
 const header = document.querySelector(".header");
 const headerLogo = document.querySelector(".header-logo");
 const navSubmenu = document.querySelector(".nav__submenu");
 const navItems = document.querySelectorAll(".nav__item");
 const hamburger = document.querySelector('.header__hamburger');
+// Hero section
+const heroButton = document.querySelector(".hero__btn");
+const heroList = document.querySelector(".hero__list");
 const heroSection = document.querySelector(".hero")
 const heroScroller = document.querySelector(".arrow-down");
-
+// Service-details section
+const listBoxes = document.querySelectorAll(".list-box");
 
 heroScroller.addEventListener("click", scrollToNextSection);
-
 
 hamburger.addEventListener('click', ()=> {
   hamburger.classList.toggle('header__hamburger--open');
@@ -36,6 +38,8 @@ heroButton.addEventListener('click', function () {
   
 }, false);
 
+
+// Header styles change on scroll
 window.onscroll = function(){
   let top = window.scrollY;
 
@@ -56,6 +60,15 @@ window.onscroll = function(){
   }
 }
 
+// List box toggle:
+listBoxes.forEach(box => {
+  box.addEventListener("click", () => {
+    const list = box.querySelector(".list-box__ul");
+    list.classList.toggle("active");
+  })
+})
+
+// Functions 
 function scrollToNextSection() {
   const sectionCords = heroSection.getBoundingClientRect();
   window.scrollTo({
