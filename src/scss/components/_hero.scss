@@ -8,8 +8,8 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-image: url(../images/hero-background.jpg);
-  background-color: $black29;
+  background-image: url(../images/Naslovna.jpg);
+  background-color: #1d1d1dde;
   background-blend-mode: multiply; 
   min-height: 100vh;
 
@@ -31,6 +31,7 @@
   text-align: center;
   padding: 0 50px;
   margin-bottom: 100px;
+  line-height: 1.2;
 
   @include laptop {
     padding: 0 20px;
@@ -52,7 +53,7 @@
 }
 
 .hero__list {
-  color: $orange;
+  color: $white;
   font-size: 22px;
   line-height: 1.1;
   background-color: $blackOp06;
@@ -87,11 +88,6 @@
   }
 }
 
-.hero__list-span {
-  color: $white;
-}
-
-
 .arrow-container {
   position: absolute;
   left: 50%;
@@ -121,4 +117,8 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+.hero-list {
+  list-style: none;
 }
