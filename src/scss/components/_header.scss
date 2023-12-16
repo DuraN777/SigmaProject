@@ -11,6 +11,10 @@
   }
 }
 
+.header--bio {
+  background-color: $bright-gray;
+}
+
 .header-img {
   max-width: 100%;
 
@@ -103,6 +107,10 @@
     transform: scale(1.07);
     color: $orange;
   }
+}
+
+.nav-link--bio {
+  color: $black;
 }
 
 // Dropdown links
