@@ -39,25 +39,36 @@ heroButton.addEventListener('click', function () {
 }, false);
 
 
+
 // Header styles change on scroll
+let lastScrollPosition = 0;
+
 window.onscroll = function(){
   let top = window.scrollY;
 
   if(top >= 100) {
     header.classList.add("active");
+  }else {
+    header.classList.remove("active");
+  }
+
+  let currentScrollPosition = window.scrollY;
+
+  if(currentScrollPosition > lastScrollPosition) {
     headerLogo.classList.add("active");
     navSubmenu.classList.add("active");
     navItems.forEach(item => {
       item.classList.add("active");
     })
   }else {
-    header.classList.remove("active");
     headerLogo.classList.remove("active");
     navSubmenu.classList.remove("active");
     navItems.forEach(item => {
       item.classList.remove("active");
     })
   }
+
+  lastScrollPosition = currentScrollPosition;
 }
 
 // List box toggle:
