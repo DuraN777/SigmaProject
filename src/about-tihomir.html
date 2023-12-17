@@ -79,9 +79,12 @@
       <div class="wrap">
         <h2 class="contact__title">Kontaktirajte nas!</h2>
         <div class="contact-flex">
-          <p class="contact__text">Iako smo mali tim, entuzijazam i posvećenost poslu su ono što nas čini posebnim.
-            <br> Ako želite saznati više o našem timu ili razgovarati o tome kako možemo pomoći vašem projektu, slobodno nas kontaktirajte.
-            <br> Radujemo se pružanju vrhunskih statističkih rešenja za vaše potrebe.</p>
+          <div class="contact__text-container">
+            <p class="contact__text">Iako smo mali tim, entuzijazam i posvećenost poslu su ono što nas čini posebnim.
+            </p>
+            <p class="contact__text">Ako želite saznati više o našem timu ili razgovarati o tome kako možemo pomoći vašem projektu, slobodno nas kontaktirajte.</p>
+            <p class="contact__text">Radujemo se pružanju vrhunskih statističkih rešenja za vaše potrebe.</p>
+          </div>
           <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
             <input type="hidden" name="access_key" value="38c8fb0c-efeb-4fa9-b029-a7f40080a0b9">
             <div class="contact__row">
@@ -90,7 +93,7 @@
             </div>
             <div class="contact__row">
               <input class="contact__input" type="email" name="email" id="email" placeholder="Email*" required>
-              <input class="contact__input" type="text" name="phone" id="phone" placeholder="Telefon"/>
+              <input class="contact__input" type="number" name="phone" id="phone" placeholder="Telefon"/>
             </div>
             <textarea class="contact__message" name="message" placeholder="Vaša poruka*" required></textarea>
             <button class="orange-btn contact__btn" type="submit">Pošalji</button>

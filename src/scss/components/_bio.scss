@@ -5,11 +5,25 @@
 .bio-flex {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0px 0px 10px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02, 2px 2px 5px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02;
+  border-radius: 8px;
+  padding: 20px 0 20px 20px;
+
+
+  @include laptop {
+    // align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 .bio-flex__left {
   width: 50%;
   padding-right: 25px;
+
+  @include laptop {
+    width: 60%;
+  }
 }
 
 .bio__title {
@@ -20,6 +34,10 @@
 .bio__text {
   margin-bottom: 15px;
   font-size: 22px;
+
+  @include laptop {
+    font-size: 18px;
+  }
 }
 
 .bio-flex__right {
@@ -28,6 +46,11 @@
   padding-left: 82px;
   flex-direction: column;
   gap: 15px;
+
+  @include laptop {
+    width: 40%;
+    padding-left: 15px;
+  }
 }
 
 .bio__img { 
@@ -41,6 +64,10 @@
   color: $orange;
   padding-left: 10px;
 
+  @include laptop-sm {
+    font-size: 18px;
+  }
+
   &:hover {
     color: $arctic;
   }
@@ -52,6 +79,10 @@
   flex-direction: column;
   gap: 10px;
   padding-left: 10px;
+
+  @include laptop-sm {
+    font-size: 18px;
+  }
 }
 
 .bio__address-number-link,

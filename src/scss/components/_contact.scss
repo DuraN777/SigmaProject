@@ -21,8 +21,12 @@
   align-items: center;
   gap: 150px;
 
-  @include laptop-sm {
+  @include laptop {
     gap: 100px;
+  }
+
+  @include laptop-sm {
+    gap: 70px;
   }
 
   @include tablet {
@@ -35,13 +39,17 @@
   }
 }
 
-.contact__text {
+.contact__text-container {
   flex: 1 1 50%;
-  font-size: 32px;
+}
+
+.contact__text {
+  font-size: 31px;
   line-height: 1.1;
+  margin-bottom: 10px;
 
   @include laptop-sm {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   @include tablet {
