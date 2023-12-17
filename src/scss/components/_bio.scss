@@ -1,11 +1,68 @@
 .bio {
-  padding: 200px 0;
+  padding: 200px 0 0;
+}
+
+.bio-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bio-flex__left {
+  width: 50%;
+  padding-right: 25px;
+}
+
+.bio__title {
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .bio__text {
   margin-bottom: 15px;
+  font-size: 22px;
 }
 
-.bio__img{ 
+.bio-flex__right {
+  width: 50%;
+  display: flex;
+  padding-left: 82px;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bio__img { 
   width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.bio__linkedIn {
+  font-size: 21px;
+  color: $orange;
+  padding-left: 10px;
+
+  &:hover {
+    color: $arctic;
+  }
+}
+
+.bio__address {
+  font-size: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.bio__address-number-link,
+.email--accent {
+  color: $orange;
+
+  &:hover {
+    color: $arctic;
+  }
+}
+
+.bio__address-email{
+  color: black;
 }
