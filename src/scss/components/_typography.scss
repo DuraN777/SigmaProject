@@ -19,7 +19,7 @@ h1 {
   }
 
   @include mobile {
-    font-size: 31px;
+    font-size: 26px;
   }
 }
 
@@ -36,7 +36,7 @@ h2 {
   }
 
   @include mobile {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 
@@ -47,9 +47,17 @@ h3 {
   @include laptop {
     font-size: 28px;
   }
+
+  @include mobile {
+    font-size: 26px;
+  }
 }
 
 h4 {
   font-size: 28px;
   font-weight: 500;
+
+  @include mobile {
+    font-size: 24px;
+  }
 }
