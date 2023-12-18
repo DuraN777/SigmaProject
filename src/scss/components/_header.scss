@@ -15,20 +15,28 @@
   background-color: $bright-gray;
 }
 
-.header-img {
-  max-width: 100%;
-
-  @include mobile {
-    padding: 6px 0 4px 0;
-  }
-}
-
 .header-logo {
   width: 250px;
   transition: all 0.5s linear;
 
   &.active {
     width: 170px;
+  }
+
+  @include mobile {
+    width: 130px;
+
+    &.active {
+      width: 100px;
+    }
+  }
+}
+
+.header-img {
+  max-width: 100%;
+
+  @include mobile {
+    padding: 6px 0 4px 0;
   }
 }
 
