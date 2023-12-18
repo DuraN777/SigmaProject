@@ -1,5 +1,9 @@
 .bio {
   padding: 200px 0 0;
+
+  @include mobile {
+    padding: 120px 0 0;
+  }
 }
 
 .bio-flex {
