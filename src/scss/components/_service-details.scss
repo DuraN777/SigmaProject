@@ -109,6 +109,10 @@
   flex: 1 1 49%;
   cursor: pointer;
   transition: all 0.3 ease-in;
+
+  @include mobile {
+    padding: 20px 10px 10px;
+  }
 }
 
 .list-box__title {
@@ -118,17 +122,13 @@
   @include laptop-sm {
     font-size: 22px;
   }
+
+  @include mobile {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 }
-
-// .list-box__text {
-//   margin: 20px 5px;
-//   font-size: 18px;
-
-//   @include laptop-sm {
-//     font-size: 16px;
-//     margin: 10px;
-//   }
-// }
 
 .list-box__item {
   margin: 20px 15px;
