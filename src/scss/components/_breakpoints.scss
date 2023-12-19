@@ -10,6 +10,11 @@ $breakpoints: (
         @content;
     }
 }
+@mixin exceptMobile {
+    @media (min-width: map-get($breakpoints, "mobile")) {
+        @content;
+    }
+}
 
 @mixin tablet {
     @media (max-width: map-get($breakpoints, "tablet")) {
