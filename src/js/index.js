@@ -76,6 +76,9 @@ window.onscroll = function(){
 listBoxes.forEach(box => {
   box.addEventListener("click", () => {
     const list = box.querySelector(".list-box__ul");
+    const arrow = box.querySelector(".list-box__title-arrow");
+
+    arrow.classList.toggle("active");
     list.classList.toggle("active");
   })
 })
