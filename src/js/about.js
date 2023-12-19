@@ -21,3 +21,7 @@ window.onscroll = function(){
     })
   }
 }
+
+hamburger.addEventListener('click', ()=> {
+  hamburger.classList.toggle('header__hamburger--open');
+});
