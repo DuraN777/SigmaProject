@@ -8,6 +8,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .footer__logo{
   padding: 6px 0;
 }
@@ -21,6 +22,7 @@
 }
 
 .footer-nav__list {
+  padding: 10px 0;
   display: flex;
   gap: 20px;
   list-style: none;
