@@ -4,6 +4,7 @@ const headerLogo = document.querySelector(".header-logo");
 const nav = document.querySelector(".nav");
 const navSubmenu = document.querySelector(".nav__submenu");
 const navItems = document.querySelectorAll(".nav__item");
+const navLink = document.querySelectorAll(".nav-link ");
 const hamburger = document.querySelector('.header__hamburger');
 // Hero section
 const heroButton = document.querySelector(".hero__btn");
@@ -15,12 +16,22 @@ const listBoxes = document.querySelectorAll(".list-box");
 
 heroScroller.addEventListener("click", scrollToNextSection);
 
+// Toggle mobile nav menu
 hamburger.addEventListener('click', ()=> {
-  hamburger.classList.toggle('header__hamburger--open');
+  hamburger.classList.toggle("header__hamburger--open");
+  nav.classList.toggle("header__hamburger--open");
 });
 
+// Hide menu after chosing nav link
+navLink.forEach(link => {
+  nav.addEventListener("click", () => {
+    hamburger.classList.remove("header__hamburger--open");
+    nav.classList.remove("header__hamburger--open")
+  })
+})
+
+// Animate hero section content toggle
 heroButton.addEventListener('click', function () {
-  
   if (heroList.classList.contains('hidden')) {
     heroList.classList.remove('hidden');
     setTimeout(function () {
