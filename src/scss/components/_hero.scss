@@ -27,6 +27,8 @@
 
   @include mobile {
     padding: 200px  0 80px;
+    min-height: fit-content;
+
   }
 }
 
