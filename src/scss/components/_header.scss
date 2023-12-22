@@ -45,6 +45,7 @@
     display: none;
   }
 }
+
 .nav.header__hamburger--open {
     display: block;
     z-index: 10;
@@ -89,7 +90,7 @@
 
   &:hover {
     .nav__submenu {
-      @include tablet {
+      @include exceptMobile {
         display: block;
       }
     }
