@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <script defer src="js/about.js"></script>
+  <script src="https://kit.fontawesome.com/02f28b383f.js" crossorigin="anonymous"></script>
+  <title>Sigma Analytics</title>
+</head>
+<body>
+  <header class="header header--bio">
+    <div class="wrap flex-row">
+      <div class="header-logo"><a href="index.html"><img  class="header-img" src="images/header-logo.webp" alt="Sigma Logo" loading="lazy"></a></div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav-link nav-link--bio" href="index.html#services">Usluge</a>
+            <ul class="nav__submenu">
+              <li class="nav__submenu-item">
+                <a href="index.html#sigma-science" class="nav__submenu-link">Sigma Science</a>
+              </li>
+              <li class="nav__submenu-item">
+                <a href="index.html#sigma-business" class="nav__submenu-link">Sigma Business</a>
+              </li>
+              <li class="nav__submenu-item">
+                <a href="index.html#sigma-experiments" class="nav__submenu-link">Sigma Experiments</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link nav-link--bio" href="index.html#about-us">Naš Tim</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link nav-link--bio" href="index.html#contact">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="header__hamburger" aria-label="Toggle header menu"><span class="header__hamburger-line"></span></button>
+    </div>
+  </header>
+  <main>
+    <section class="bio">
+      <div class="wrap">
+        <h1 class="bio__title">Dr Dragana (Tekić) Novaković</h1>
+        <div class="bio-flex">
+          <div class="bio-flex__left">
+            <p class="bio__text">Doc. dr Dragana (Tekić) Novaković trenutno je zaposlena na Poljoprivrednom fakultetu, Univerziteta u Novom Sadu, gde izvodi nastavu iz predmeta Statistika, Statistički metodi, Ekonometrija, Biometrika i Biostatistika, na osnovnim, master i doktorskim studijama. Osnovne, master i doktorske studije, smer Agroekonomija, završila je na Poljoprivrednom fakultetu u Novom Sadu. Doktorsku disertaciju pod nazivom: “Panel regresiona analiza faktora profitabilnosti poljoprivrednih i prehrambenih preduzeća iz Republike Srbije”, uspešno je odbranila 2022. godine.
+            </p>
+            <p class="bio__text">U dosadašnjem naučnom-istraživačkom radu, Dragana (Tekić) Novaković je kao autor ili koautor objavila više od 50 naučnih radova u časopisima iz različitih oblasti, bila je učesnik na više domaćih i međunarodnih konferencija.  Takođe, bila je učesnik i na većem broju domaćih i međunarodnih projekata, gde je u skladu sa ciljevima projekata i svojim dosadašnjim iskustvom bila zadužena za statističku obradu podataka, kreiranje i analizu podataka iz upitnika, kao i finansijsku analizu podataka.
+            </p>
+            <p class="bio__text">Poseduje napredno znanje u vezi sa analizom podataka oslanjajući se na različite softvere za
+              statističku obradu podataka (R, Python, SPSS, Stata, Eviews, Statistica).
+            </p>
+          </div>
+          <div class="bio-flex__right">
+            <img src="images/BioPhotos/Dragana.webp" alt="Slika Dragane" class="bio__img">
+            <a href="https://www.linkedin.com/in/dragana-teki%C4%87-novakovi%C4%87-63a1502a3/" class="bio__linkedIn" target="_blank">LinkedIn Profil<i class="fa-brands fa-linkedin linkedin-icon"></i></a>
+            <address class="bio__address">
+              <span class="bio__address-number">Pozovite na: <a class="bio__address-number-link" href="tel:321555">321555</a></span>
+              <a href="mailto:sigma0analytics@gmail.com" class="bio__address-email">Email:<span class="email--accent"> sigma0analytics@gmail.com</span></a>
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2 class="contact__title">Kontaktirajte nas!</h2>
+        <div class="contact-flex">
+          <div class="contact__text-container">
+            <p class="contact__text">Iako smo mali tim, entuzijazam i posvećenost poslu su ono što nas čini posebnim.
+            </p>
+            <p class="contact__text">Ako želite saznati više o našem timu ili razgovarati o tome kako možemo pomoći vašem projektu, slobodno nas kontaktirajte.</p>
+            <p class="contact__text">Radujemo se pružanju vrhunskih statističkih rešenja za vaše potrebe.</p>
+          </div>
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+            <input type="hidden" name="access_key" value="38c8fb0c-efeb-4fa9-b029-a7f40080a0b9">
+            <div class="contact__row">
+              <input class="contact__input" type="text" name="name" id="name" placeholder="Ime*" required>
+              <input class="contact__input" type="text" name="last_name" id="last_name" placeholder="Prezime*" required>
+            </div>
+            <div class="contact__row">
+              <input class="contact__input" type="email" name="email" id="email" placeholder="Email*" required>
+              <input class="contact__input" type="number" name="phone" id="phone" placeholder="Telefon"/>
+            </div>
+            <textarea class="contact__message" name="message" placeholder="Vaša poruka*" required></textarea>
+            <button class="orange-btn contact__btn" type="submit">Pošalji</button>
+          </form>
+        </div>
+      </div>
+      <script src="https://web3forms.com/client/script.js" async defer></script>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer__row">
+      <div class="footer__logo"><img  class="footer__logo-img" src="images/Logo.webp" alt="Sigma Logo" loading="lazy"></div>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav-link" href="#services">Usluge</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav-link" href="#about-us">Naš Tim</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav-link" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
