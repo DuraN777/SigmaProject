@@ -58,35 +58,6 @@
   }
 }
 
-.about-us__list {
-  padding: 0 40px;
-  margin-bottom: 40px;
-
-  @include mobile {
-    padding: 0 20px;
-    margin-bottom: 20px;
-  }
-}
-
-.about-us__list-item {
-  font-size: 21px;
-  margin-bottom: 15px;
-  line-height: 1.1;
-
-  @include mobile {
-    font-size: 18px;
-  }
-}
-
-.about-us__list-item-accent {
-  font-size: 22px;
-  font-weight: 500;
-
-  @include mobile {
-    font-size: 20px;
-  }
-}
-
 .about-us__associates {
   display: flex;
   flex-wrap: wrap;
@@ -121,21 +92,21 @@
   width: 100%;
   object-fit: contain;
   border-radius: 0;
-  margin-bottom: 15px;
-  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .about-us__associate-details {
   padding: 0 15px;
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .about-us__associate-name {
   font-size: 22px;
   font-weight: 600;
   display: block;
-  margin-bottom: 15px;
 
   @include mobile {
     font-size: 20px;
@@ -144,7 +115,12 @@
 
 .about-us__asscoiate-ln {
   font-size: 21px;
-  color: $orange;
+  color: $black;
+
+  &:hover {
+    transform: scale(1.02);
+    color: $black29;
+  }
 
   @include mobile {
     font-size: 19px;
@@ -152,6 +128,28 @@
 }
 
 .linkedin-icon {
-  margin-left: 15px;
+  margin-left: 12px;
   font-size: 21px;
+  color: $orange;
+}
+
+.about-us__associate-bio {
+  display: block;
+  font-size: 21px;
+  font-weight: 400;
+  color: $black;
+
+  &:hover {
+    transform: scale(1.02);
+    color: $black29;
+  }
+
+  @include mobile {
+    font-size: 19px;
+  }
+}
+
+.about-us__associate-bio-icon {
+  margin-left: 12px;
+  color: $orange;
 }
