@@ -36,7 +36,9 @@
 
   @include laptop {
     width: 60%;
+    padding-right: 15px;
   }
+
   @include laptop-sm {
     width: 50%;
   }
@@ -64,7 +66,7 @@
 .bio-flex__right {
   width: 50%;
   display: flex;
-  padding-left: 82px;
+  padding-left: 25px;
   flex-direction: column;
   gap: 15px;
 
@@ -77,6 +79,10 @@
     width: 50%;
   }
 
+  @include exceptTablet {
+    border-left: 4px solid $orange;
+  }
+
   @include tablet{
     width: 100%;
     padding-left: 0px
@@ -87,6 +93,10 @@
   width: 100%;
   border-radius: 30%;
   object-fit: cover;
+
+  @include exceptTablet {
+    margin-bottom: 10px;
+  }
 }
 
 .bio__linkedIn {
