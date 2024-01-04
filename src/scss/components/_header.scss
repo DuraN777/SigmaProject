@@ -46,13 +46,14 @@
     z-index: 10;
     position: absolute;
     background-color: $orange;
+    border-bottom: solid 2px grey;
     padding: 50px 20px;
     top: 56px;
     left:0;
     width: 100%;
     height: fit-content;
-    transform: translateX(10000px);
-    transition: all 0.5s linear;
+    transform: translateX(1200px);
+    transition: transform 0.7s ease-in-out, top 0.5s linear;
 
     &.active {
       top: 45px;
@@ -61,6 +62,7 @@
 }
 
 .nav.header__hamburger--open {
+  // transition: transform 0.5s ease;
   transform: translateX(0px)
 }
 
