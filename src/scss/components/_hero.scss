@@ -13,11 +13,16 @@
   background-blend-mode: multiply; 
   min-height: 100vh;
 
+
+  @include desktop {
+    background-image: url(../images/Naslovna_srednja1920.webp);
+  }
   @include laptop {
     padding: 250px 0 100px;
   }
 
   @include tablet {
+    background-image: url(../images/Naslovna_mala640.webp);
     padding: 180px 0 100px;
   }
 
