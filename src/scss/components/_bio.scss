@@ -57,6 +57,7 @@
 .bio__text {
   margin-bottom: 15px;
   font-size: 22px;
+  line-height: 1.05;
 
   @include laptop {
     font-size: 19px;
