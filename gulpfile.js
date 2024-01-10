@@ -1,13 +1,14 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('node-sass'));
-const autoprefixer = require('gulp-autoprefixer');
+const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
 const browserSync = require('browser-sync').create();
 
 gulp.task('scss', ()=> {
 	return gulp
   .src('src/scss/styles.scss')
 	.pipe(sass().on('error', sass.logError))
-  .pipe(autoprefixer())
+  .pipe(postcss([autoprefixer('last 2 versions')]))
 	.pipe(gulp.dest('dist/css'))
 	.pipe(browserSync.stream());
 });

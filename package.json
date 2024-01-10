@@ -4,11 +4,14 @@
   "description": "Webpage for business",
   "main": "gulpfile.js",
   "devDependencies": {
+    "autoprefixer": "^10.4.16",
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.33"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
