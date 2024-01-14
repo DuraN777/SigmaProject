@@ -8,7 +8,7 @@ const navLink = document.querySelectorAll(".nav-link ");
 const hamburger = document.querySelector('.header__hamburger');
 // Hero section
 const heroButton = document.querySelector(".hero__btn");
-const heroList = document.querySelector(".hero__list");
+
 const heroSection = document.querySelector(".hero")
 const heroScroller = document.querySelector(".arrow-down");
 // Service-details section
@@ -29,26 +29,6 @@ navLink.forEach(link => {
     nav.classList.remove("header__hamburger--open")
   })
 })
-
-// Animate hero section content toggle
-heroButton.addEventListener('click', function () {
-  if (heroList.classList.contains('hidden')) {
-    heroList.classList.remove('hidden');
-    setTimeout(function () {
-      heroList.classList.remove('visuallyhidden');
-    }, 50);
-  } else {
-    heroList.classList.add('visuallyhidden');    
-    heroList.addEventListener('transitionend', function(e) {
-      heroList.classList.add('hidden');
-    }, {
-      capture: false,
-      once: true,
-      passive: false
-    });
-  }
-  
-}, false);
 
 // Header styles change on scroll
 let lastScrollPosition = 0;
