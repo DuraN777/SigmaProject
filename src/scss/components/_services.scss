@@ -62,15 +62,22 @@
 
 .services__box-title {
   display: block;
-  margin-bottom: 25px;font-size: 24px;
+  margin-bottom: 25px;
+  font-size: 24px;
   font-weight: bold;
 
   @include laptop-sm {
     font-size: 24px;
   }
 
+  @include tablet {
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+
   @include mobile {
     margin-bottom: 15px;
+    font-size: 24px;
   }
 }
 
@@ -96,13 +103,14 @@
   }
 
   @include tablet{
-    font-size: 18px;
+    font-size: 22px;
     min-height: auto;
   }
 
   @include mobile {
     text-align: center;
     margin-bottom: 0;
+    font-size: 18px;
   }
 }
 
