@@ -46,6 +46,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @include laptop-sm {
+    padding: 20px;
+  }
+
   @include tablet {
     padding: 0;
   }
@@ -57,14 +61,15 @@
 }
 
 .services__box-title {
-  margin-bottom: 25px;
+  display: block;
+  margin-bottom: 25px;font-size: 24px;
+  font-weight: bold;
 
   @include laptop-sm {
     font-size: 24px;
   }
 
   @include mobile {
-    font-size: 26px;
     margin-bottom: 15px;
   }
 }
@@ -84,10 +89,15 @@
   font-size: 22px;
   line-height: 110%;
   margin-bottom: 10px;
+  min-height: 73px;
 
+  @include laptop-sm {
+    font-size: 18px;
+  }
 
   @include tablet{
     font-size: 18px;
+    min-height: auto;
   }
 
   @include mobile {
@@ -144,6 +154,7 @@
 
   @include tablet {
     display: block;
+    align-self: center;
   }
 
   @include mobile {
