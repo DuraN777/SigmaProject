@@ -8,11 +8,12 @@ const navLink = document.querySelectorAll(".nav-link ");
 const hamburger = document.querySelector('.header__hamburger');
 // Hero section
 const heroButton = document.querySelector(".hero__btn");
-
 const heroSection = document.querySelector(".hero")
 const heroScroller = document.querySelector(".arrow-down");
 // Service-details section
 const listBoxes = document.querySelectorAll(".list-box");
+// Acordion
+const acordions = document.querySelectorAll('.acordion__item');
 
 heroScroller.addEventListener("click", scrollToNextSection);
 
@@ -72,6 +73,20 @@ listBoxes.forEach(box => {
     arrow.classList.toggle("active");
     list.classList.toggle("active");
   })
+})
+
+
+//Acordion events 
+acordions.forEach(box => {
+  const open = box.querySelector('.acordion__button');
+  open.addEventListener('click', function() {
+    acordions.forEach(b => {
+      if ( b !== box) {
+        b.classList.remove('active');
+      }
+    })
+    box.classList.toggle('active');
+  });
 })
 
 // Functions 
