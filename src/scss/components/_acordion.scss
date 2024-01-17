@@ -1,10 +1,9 @@
 .acordion {
-  padding-top: 67px;
-  padding-bottom: 70px;
+  padding: 100px 0;
+  background-color: $bright-gray;
 
-  @include tablet {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  @include mobile {
+    padding: 50px 0;
   }
 }
 
