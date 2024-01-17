@@ -101,8 +101,10 @@
 }
 
 .bio__linkedIn {
-  font-size: 21px;
+  display: block;
+  font-size: 22px;
   color: $orange;
+  margin: 0 auto;
 
   @include laptop-sm {
     font-size: 18px;
@@ -113,26 +115,6 @@
   }
 }
 
-.bio__address {
-  font-size: 21px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  @include laptop-sm {
-    font-size: 18px;
-  }
-}
-
-.bio__address-number-link,
-.email--accent {
-  color: $orange;
-
-  &:hover {
-    color: $arctic;
-  }
-}
-
-.bio__address-email{
-  color: black;
+.bio__linkedIn:hover {
+  transform: scale(1.02);
 }

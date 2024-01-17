@@ -1,6 +1,6 @@
 .contact {
   padding:100px 0;
-  // background-color: $bright-gray;
+  background-color: $arcticOp10;
 
   @include mobile {
     padding: 50px 0;
@@ -8,10 +8,16 @@
 }
 
 .contact__title {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+  color: $orange;
+  text-align: center;
+
+  @include laptop {
+    margin-bottom: 60px;
+  }
 
   @include mobile {
-    text-align: center;
+    margin-bottom: 40px;
   }
 }
 
@@ -19,18 +25,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 150px;
+  gap: 130px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02, 2px 2px 5px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02;
+
 
   @include laptop {
     gap: 100px;
   }
 
   @include laptop-sm {
-    gap: 70px;
-  }
-
-  @include tablet {
-    gap: 70px;
+    gap: 50px;
   }
 
   @include mobile {
@@ -44,6 +49,8 @@
 }
 
 .contact__text {
+  display: block;
+  color: $black29;
   font-size: 31px;
   line-height: 1.1;
   margin-bottom: 10px;
@@ -158,4 +165,34 @@
   display: block;
   width: fit-content;
   padding: 15px 25px;
+}
+
+.contact__address-text {
+  display: block;
+  color: $black29;
+  font-size: 31px;
+  line-height: 1.1;
+  margin-bottom: 0px;
+
+  @include laptop-sm {
+    font-size: 26px;
+  }
+
+  @include tablet {
+    font-size: 24px;
+  }
+
+  @include mobile {
+    font-size: 20px;
+  }
+}
+
+.bio__address-number,
+.bio__address-email {
+  color: $arctic;
+
+  &:hover {
+    color: $orange;
+    transform: scale(1.1);
+  }
 }
