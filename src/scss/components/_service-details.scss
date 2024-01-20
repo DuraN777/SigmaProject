@@ -102,7 +102,7 @@
 .list-box {
   box-shadow: 0px 0px 10px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02, 2px 2px 5px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02;
   background-color: $white;
-  padding: 30px 15px 15px;
+  padding: 30px 15px;
   height: fit-content;
   border-radius: 7px;
   color: $black;
@@ -111,12 +111,11 @@
   transition: all 0.3 ease-in;
 
   @include mobile {
-    padding: 20px 10px 10px;
+    padding: 20px 10px;
   }
 }
 
 .list-box__title {
-  margin-bottom: 25px;
   font-size: 24px;
   display: flex;
   justify-content: space-between;
@@ -162,6 +161,7 @@
     font-size: 20px;
   }
 }
+
 .list-box__ul {
   padding-left: 10px;
   max-height: 0px;
