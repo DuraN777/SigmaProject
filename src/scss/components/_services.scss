@@ -41,7 +41,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
   text-align: center;
   align-items: center;
   justify-content: space-between;
@@ -204,7 +204,7 @@
 
   @include mobile {
     gap: 0px;
-    padding: 25px 10px 0 25px;
+    padding: 25px 10px 25px 25px;
     width: 100%;
     align-items: center;
   }
