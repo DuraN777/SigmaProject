@@ -95,7 +95,6 @@
 .services__box-text {
   font-size: 22px;
   line-height: 110%;
-  margin-bottom: 10px;
   min-height: 73px;
 
   @include laptop-sm {
@@ -192,7 +191,7 @@
 }
 
 .flex-left {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 
   @include tablet {
     width: 50%;
