@@ -2,7 +2,7 @@
 const header = document.querySelector(".header");
 const headerLogo = document.querySelector(".header-logo");
 const nav = document.querySelector(".nav");
-const navSubmenu = document.querySelector(".nav__submenu");
+const navSubmenu = document.querySelectorAll(".nav__submenu");
 const navItems = document.querySelectorAll(".nav__item");
 const navLink = document.querySelectorAll(".nav-link ");
 const hamburger = document.querySelector('.header__hamburger');
@@ -48,14 +48,18 @@ window.onscroll = function(){
   if(currentScrollPosition > lastScrollPosition) {
     headerLogo.classList.add("active");
     nav.classList.add("active");
-    navSubmenu.classList.add("active");
+    navSubmenu.forEach((item) => {
+      item.classList.add("active");
+    })
     navItems.forEach(item => {
       item.classList.add("active");
     })
   }else {
     headerLogo.classList.remove("active");
     nav.classList.remove("active");
-    navSubmenu.classList.remove("active");
+    navSubmenu.forEach((item) => {
+      item.classList.remove("active");
+    })
     navItems.forEach(item => {
       item.classList.remove("active");
     })
