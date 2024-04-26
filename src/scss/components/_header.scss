@@ -113,7 +113,8 @@
   }
 }
 
-.nav-link {
+.nav-link,
+.nav__link--lang {
   color: $white;
   display: inline-block;
   transition: transform 0.3s ease-out;
@@ -175,8 +176,20 @@
   }
 }
 
-// Header hamburger menu
+.nav__submenu-img {
+  max-width: 50px;
+  display: inline-block;
+  transition: transform 0.3s ease-out;
 
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @include tablet {
+    max-width: 35px;
+  }
+}
+// Header hamburger menu
 
 .header__hamburger {
   display: none;
