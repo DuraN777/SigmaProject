@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <script defer src="js/index.js"></script>
+  <script src="https://kit.fontawesome.com/02f28b383f.js" crossorigin="anonymous"></script>
+  <title>Sigma Analytics</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap flex-row">
+      <div class="header-logo"><a href="index.html"><img  class="header-img" src="images/header-logo.webp" alt="Sigma Logo" loading="lazy"></a></div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav-link" href="#services">Service</a>
+            <ul class="nav__submenu">
+              <li class="nav__submenu-item">
+                <a href="#sigma-science" class="nav__submenu-link">Sigma Science</a>
+              </li>
+              <li class="nav__submenu-item">
+                <a href="#sigma-business" class="nav__submenu-link">Sigma Business</a>
+              </li>
+              <li class="nav__submenu-item">
+                <a href="#sigma-experiments" class="nav__submenu-link">Sigma Experiments</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#about-us">Our Team</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+
+          <li class="nav__item">
+            <span class="nav__link--lang" href="#">Language</span>
+            <ul class="nav__submenu">
+              <li class="nav__submenu-item">
+                <a class="nav__submenu-button" href="index.html">
+                  <img src="images/serbia.png" alt="Serbian flag" class="nav__submenu-img" loading="lazy">
+                </a>
+              </li>
+              <li class="nav__submenu-item">
+                <a class="nav__submenu-button" href="index-en.html">
+                  <img src="images/united-kingdom.png" alt="British flag" class="nav__submenu-img" loading="lazy">
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+      <button type="button" class="header__hamburger" aria-label="Toggle header menu"><span class="header__hamburger-line"></span></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-flex">
+        <h1 class="hero__title">Statistical data are not just a collection of information, but your roadmap to success!</h1>
+        <a class="orange-btn hero__btn" href="#contact">Contact Us</a>
+        
+      </div>
+      <div class="arrow-container">
+        <button class="arrow-btn" aria-label="arrow to scroll to next section">
+          <i class="fa-solid fa-chevron-down arrow-down"></i>
+        </button>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="wrap">
+        <h2 class="services__title">Our Services</h2>
+        <div class="services__box-wrap">
+          <div class="services__box">
+            <div class="services__box-flex">
+              <div class="flex-left">
+                <span class="services__box-title">Sigma Science</span>
+                <h3 class="services__box-text">Statistical support for scientific research</h3>
+                <button class="orange-btn services__btn services__btn--tablet"><a href="#sigma-science" class="services__link">Learn more</a></button>
+              </div>
+              <img src="images/SigmaScience_naslovna.webp" alt="" class="services__box-img" loading="lazy">
+            </div>
+            <button class="orange-btn services__btn services__btn--laptop"><a href="#sigma-science" class="services__link">Learn more</a></button>
+          </div>
+          <div class="services__box">
+            <div class="services__box-flex">
+              <div class="flex-left">
+                <span class="services__box-title">Sigma Business</span>
+                <h3 class="services__box-text">Statistical support and financial analysis of your company</h3>
+                <button class="orange-btn services__btn services__btn--tablet"><a href="#sigma-business" class="services__link">Learn more</a></button>
+              </div>
+              <img src="images/SigmaBusiness_naslovna.webp" alt="" class="services__box-img" loading="lazy">
+            </div>
+            <button class="orange-btn services__btn services__btn--laptop"><a href="#sigma-business" class="services__link">Learn more</a></button>
+          </div>
+          <div class="services__box">
+            <div class="services__box-flex">
+              <div class="flex-left">
+                <span class="services__box-title">Sigma Experiments</span>
+                <h3 class="services__box-text">Statistical data processing for business research</h3>
+                <button class="orange-btn services__btn services__btn--tablet"><a href="#sigma-experiments" class="services__link">Learn more</a></button>
+              </div>
+              <img src="images/SigmaExperiments_naslovna.webp" alt="" class="services__box-img" loading="lazy">
+            </div>
+            <button class="orange-btn services__btn services__btn--laptop"><a href="#sigma-experiments" class="services__link">Learn more</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service-details" id="sigma-science">
+      <div class="wrap">
+        <h2 class="service-details__title">Sigma Science</h2>
+        <div class="service-details__top">
+          <div class="service-details__top-text">
+            <span class="service-details__subtitle">Statistical support for scientific research</span>
+            <p class="service-details__text">The data processing services in scientific research that we offer are tailored to the needs of the research. From basic data analysis to complex models and simulations, our ability to provide accurate and relevant results enables the making of scientifically grounded conclusions. Through a transparent approach, we help you expand your research horizons and make significant scientific contributions.
+            </p>
+          </div>
+          <img class="service-details__top-img" src="images/SigmaScience.webp" alt="" loading="lazy">
+        </div>
+        <div class="list-container">
+          <div class="list-box">
+            <h3 class="list-box__title">Research Methodology <i class="fa-solid fa-chevron-down list-box__title-arrow"></i></h3>
+            <ul class="list-box__ul">
+              <li class="list-box__item">Defining the research question;</li>
+              <li class="list-box__item">Creating the research design;</li>
+              <li class="list-box__item">Sample optimization;</li>
+              <li class="list-box__item">Choosing data collection techniques;</li>
+              <li class="list-box__item">Selecting statistical methods for data analysis.</li>
+            </ul>
+          </div>
+          <div class="list-box">
+            <h3 class="list-box__title">Descriptive Statistics <i class="fa-solid fa-chevron-down list-box__title-arrow"></i></h3>
+            <ul class="list-box__ul">
+              <li class="list-box__item">Analysis of empirical data distribution: classification of available data and calculation of distribution shape indicators;
+              </li>
+              <li class="list-box__item">Tabular and graphical representation of input data, i.e., analysis results;</li>
+              <li class="list-box__item">Measures of central tendency;</li>
+              <li class="list-box__item">Measures of variability.</li>
+            </ul>
+          </div>
+          <div class="list-box list-box--special">
+            <h3 class="list-box__title">Statistical Data Processing <i class="fa-solid fa-chevron-down list-box__title-arrow"></i></h3>
+            <ul class="list-box__ul list-box__ul--flex">
+              <li class="list-box__sublist-title list-box__item--flex">Quantitative Statistical Methods
+                <ul class="list-box__sublist">
+                  <li class="list-box__item">Descriptive statistics;</li>
+                  <li class="list-box__item">Tests of hypothesis involving means, variances, and proportions;</li>
+                  <li class="list-box__item">Analysis of Variance (ANOVA);</li>
+                  <li class="list-box__item">Block system;</li>
+                  <li class="list-box__item">Experimental research;</li>
+                  <li class="list-box__item">Multifactorial analysis;</li>
+                  <li class="list-box__item">Discriminant analysis;</li>
+                  <li class="list-box__item">Cluster analysis;</li>
+                  <li class="list-box__item">Factorial analysis;</li>
+                  <li class="list-box__item">Canonical correlation analysis;</li>
+                  <li class="list-box__item">Regression and correlation analysis;</li>
+                  <li class="list-box__item">Quality control.</li>
+                </ul>
+              </li>
+              <li class="list-box__sublist-title list-box__item--flex">Qualitative Statistical Methods
+                <ul class="list-box__sublist">
+                  <li class="list-box__item">Content analysis (analysis of surveys, interviews, focus groups, etc.);</li>
+                  <li class="list-box__item">Analysis of thematic categories;</li>
+                  <li class="list-box__item">Narrative analysis;</li>
+                  <li class="list-box__item">Media content analysis;</li>
+                  <li class="list-box__item">Experimental research.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="list-box">
+            <h3 class="list-box__title">Interpretation of Analysis Results <i class="fa-solid fa-chevron-down list-box__title-arrow"></i></h3>
+            <ul class="list-box__ul">
+              <li class="list-box__item">Interpreting the results of the analysis in the context of the research question;</li>
+              <li class="list-box__item">Visualization of analysis results.</li>
+            </ul>
+          </div>
+        </div>
+      </div class="wrap">
+    </section>
+    <section class="service-details" id="sigma-business">
+      <div class="wrap">
+        <h2 class="service-details__title">Sigma Business</h2>
+        <div class="service-details__top">
+          <div class="service-details__top-text">
+            <span class="service-details__subtitle">Statistical Support for Business Analysis</span>
+            <p class="service-details__text">Our services are aimed at providing top-notch statistical and financial data analysis to help you make informed business decisions and enhance your company's operations. Regardless of the type of data or analysis you need, we are here to assist you.
+            </p>
+          </div>
+          <img class="service-details__top-img" src="images/SigmaBussines.webp" alt="" loading="lazy">
+        </div>
+        <div class="list-container">
+          <div class="list-box">
+            <h3 class="list-box__title">Business Performance Analysis <i class="fa-solid fa-chevron-down list-box__title-arrow"></i></h3>
+            <ul class="list-box__ul">
+              <li class="list-box__item">Efficiency;</li>
+              <li class="list-box__item">Effectivness;</li>
+              <li class="list-box__item">Productivity;</li>
+              <li class="list-box__item">Economy;</li>
+              <li class="list-box__item">Profitability;</li>
+              <li class="list-box__item">Return on Investement (ROI).</li>
+            </ul>
+          </div>
+          <div class="list-box">
+            <h3 class="list-box__title">Financial Data Analysis <i class="fa-solid fa-chevron-down list-box__title-arrow"></i>
+            </h3>
+            <ul class="list-box__ul">
+              <li class="list-box__item">Analysis of financial statements (balance sheet, income statement, cash flow, changes in equity);</li>
+              <li class="list-box__item">Cost and efficiency analysis;</li>
+              <li class="list-box__item">Assessment of liquidity, solvency, profitability, and return on investment;</li>
+              <li class="list-box__item">Business trend evaluation.</li>
+            </ul>
+          </div>
+          <div class="list-box">
+            <h3 class="list-box__title list-box__title--centered">Market Analysis <i class="fa-solid fa-chevron-down list-box__title-arrow"></i></h3>
+            <ul class="list-box__ul">
+              <li class="list-box__item">Market segmentation;</li>
+              <li class="list-box__item">Sales and growth analysis;</li>
+              <li class="list-box__item">Monitoring and evaluation of performance;</li>
+              <li class="list-box__item">Predictive models.</li>
+            </ul>
+          </div>
+          <div class="list-box">
+            <h3 class="list-box__title">Graphical Representation of Business Data <i class="fa-solid fa-chevron-down list-box__title-arrow"></i></h3>
+            <p class="list-box__ul list-box__ul--p">Graphical representation of business data involves using various types of charts and diagrams to visualize and present business data in an understandable and useful manner. This technique allows for a clear view of trends, analysis of relationships between different indicators, and identification of key points in business operations.
+            </p>
+          </div>
+        </div>
+      </div class="wrap">
+    </section>
+    <section class="service-details" id="sigma-experiments">
+      <div class="wrap">
+        <h2 class="service-details__title">Sigma Experiments</h2>
+        <div class="service-details__top">
+          <div class="service-details__top-text">
+            <span class="service-details__subtitle">Statistical Data Processing for Experimental Research</span>
+            <p class="service-details__text">Our service includes comprehensive statistical analysis tailored for experimental research, encompassing a variety of techniques from designing experiments to analyzing and interpreting their results. We employ advanced statistical methods to ensure precise and reliable conclusions can be drawn from your experimental data.
+            </p>
+          </div>
+          <img class="service-details__top-img" src="images/SigmaExperiments.webp" alt="" loading="lazy">
+        </div>
+        <div class="list-container">
+          <div class="list-box">
+            <h3 class="list-box__title">Support in Experiment Planning <i class="fa-solid fa-chevron-down list-box__title-arrow"></i></h3>
+            <ul class="list-box__ul">
+              <li class="list-box__item">Experimental design;</li>
+              <li class="list-box__item">Selection of appropriate methodology.</li>
+            </ul>
+          </div>
+          <div class="list-box">
+            <h3 class="list-box__title">Descriptive Statistics <i class="fa-solid fa-chevron-down list-box__title-arrow"></i></h3>
+            <ul class="list-box__ul">
+              <li class="list-box__item">Analysis of empirical data distribution – classification of available data and calculation of distribution shape indicators;</li>
+              <li class="list-box__item">Measures of central tendency;</li>
+              <li class="list-box__item">Measures of variability.</li>
+            </ul>
+          </div>
+          <div class="list-box">
+            <h3 class="list-box__title list-box__title--centered">Experimental Statistics <i class="fa-solid fa-chevron-down list-box__title-arrow"></i></h3>
+            <ul class="list-box__ul">
+              <li class="list-box__item">Randomization and sample creation;</li>
+              <li class="list-box__item">Identification of causal relationships;</li>
+              <li class="list-box__item">Hypothesis testing;</li>
+              <li class="list-box__item">Multivariate analysis;</li>
+              <li class="list-box__item">Analysis of variance;</li>
+              <li class="list-box__item">Cluster analysis;</li>
+              <li class="list-box__item">Time series analysis.</li>
+            </ul>
+          </div>
+          <div class="list-box">
+            <h3 class="list-box__title">Interpretation of Experimental Results <i class="fa-solid fa-chevron-down list-box__title-arrow"></i></h3>
+            <ul class="list-box__ul">
+              <li class="list-box__item">Interpreting the results of the analysis in the context of the research question;</li>
+              <li class="list-box__item">Visualization of analysis results.</li>
+            </ul>
+          </div>
+        </div>
+      </div class="wrap">
+    </section>
+    <section class="about-us" id="about-us">
+      <div class="wrap">
+          <h2 class="about-us__title">Our<span class="about-us__title-accent">&nbsp;Team</span> <span class="about-us__title-icon"><i class="fa-solid fa-users-line"></i></span></h2>
+          <div class="about-us__txt-container">
+            <p class="about-us__text">
+              In line with our long-standing experience in the academic community, our team has specialized in the application of advanced statistical methods across various disciplines, with a particular focus on economic and biological research. <br>
+            </p>
+            <p class="about-us__text">We use a variety of software for statistical data processing, including SPSS, STATISTICA, R, PYTHON, STATA, EVIEWS. Additionally, we efficiently utilize SQL for structuring and managing databases.</p>
+          </div>
+          <div class="about-us__associates">
+            <div class="about-us__associates-card">
+              <img class="about-us__associates-img" src="images/BioPhotos/Tihomir.webp" alt="Picture of Tihomir" loading="lazy">
+              <span class="about-us__associate-details">
+                <i class="about-us__associate-name">Dr. Tihomir Novaković</i>
+                <a href="https://www.linkedin.com/in/tihomir-novakovi%C4%87-phd-44bb69283/" class="about-us__asscoiate-ln" target="_blank">LinkedIn Profile<i class="fa-brands fa-linkedin linkedin-icon"></i></a>
+                <a href="about-tihomir.html" class="about-us__associate-bio">Resume <i class="fa-regular fa-address-card about-us__associate-bio-icon"></i></a>
+              </span>
+            </div>
+            <div class="about-us__associates-card">
+              <img src="images/BioPhotos/Dragana.webp" alt="Picture of Dragana" class="about-us__associates-img" loading="lazy">
+              <span class="about-us__associate-details">
+                <i class="about-us__associate-name">Dr. Dragana (Tekić) Novaković</i>
+                <a href="https://www.linkedin.com/in/dragana-teki%C4%87-novakovi%C4%87-63a1502a3/" class="about-us__asscoiate-ln" target="_blank">LinkedIn Profile<i class="fa-brands fa-linkedin linkedin-icon"></i></a>
+                <a href="about-dragana.html" class="about-us__associate-bio">Resume <i class="fa-regular fa-address-card about-us__associate-bio-icon"></i></a>
+              </span>
+            </div>
+          </div>
+          <p class="about-us__text italic">Our commitment to quality, proactive approach to research, and broad range of skills make us a reliable partner for your statistical needs. Contact us to find out how we can contribute to your project!</p>
+      </div>
+    </section>
+    <section class="acordion" id="faq">
+			<div class="wrap">
+				<h2 class="acordion__title">Frequently Asked Questions</h2>
+				<div class="acordion__item">
+					<div class="acordion__button">
+						<h3 class="acordion__heading">What is the cost of statistical data processing?</h3>
+					</div>
+					<div class="acordion__content">
+						<p class="acordion__text">The price of statistical data processing is determined after reviewing the data and the research design. The cost is based on the complexity and number of statistical analyses required, whether data entry is needed, the intricacy of data organization and transformation, the scope of work, and the deadlines involved.
+					  </p>
+					</div>
+				</div>
+				<div class="acordion__item">
+					<div class="acordion__button">
+						<h3 class="acordion__heading">What software do you use for data processing?</h3>
+					</div>
+					<div class="acordion__content">
+						<p class="acordion__text">We rely on a variety of software tools for statistical data processing, including R, Python, SPSS, Stata, Eviews, and Statistica. We successfully combine these with the necessary expertise in creating and managing databases using SQL.
+						</p>
+					</div>
+				</div>
+				<div class="acordion__item">
+					<div class="acordion__button">
+						<h3 class="acordion__heading">What is the turnaround time for completing a project?</h3>
+					</div>
+					<div class="acordion__content">
+						<p class="acordion__text">We strive to meet your needs and deliver results as quickly as possible. However, it is important to be realistic in your expectations and understand that some projects may require 7, 10, or more days of data processing. Therefore, please contact us as early as possible.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2 class="contact__title">Contact Us!</h2>
+        <div class="contact-flex">
+          <div class="contact__text-container">
+            <p class="contact__text">If you would like to learn more about our team or discuss how we can assist in realizing your project, please feel free to contact us:</p>
+            <address class="contact__address">
+              <span class="contact__address-text">By phone: <a class="bio__address-number" href="tel:+381646149526">+381-64-614-95-26</a></span>
+              <p class="contact__address-text">Via email:<a class="bio__address-email" href="mailto:sigma0analytics@gmail.com"> sigma0analytics@gmail.com</a></p>
+            </address>
+            <p class="contact__text">Or through our web form!</p>
+            <p class="contact__text">We look forward to providing top-notch statistical solutions for your needs.</p>
+          </div>
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+            <input type="hidden" name="access_key" value="38c8fb0c-efeb-4fa9-b029-a7f40080a0b9">
+            <div class="contact__row">
+              <input class="contact__input" type="text" name="name" id="name" placeholder="Name*" required>
+              <input class="contact__input" type="text" name="last_name" id="last_name" placeholder="Surname*" required>
+            </div>
+            <div class="contact__row">
+              <input class="contact__input" type="email" name="email" id="email" placeholder="Email*" required>
+              <input class="contact__input" type="number" name="phone" id="phone" placeholder="Phone"/>
+            </div>
+            <textarea class="contact__message" name="message" placeholder="Your message*" required></textarea>
+            <button class="orange-btn contact__btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <script src="https://web3forms.com/client/script.js" async defer></script>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer__row">
+      <div class="footer__logo"><img  class="footer__logo-img" src="images/Logo.webp" alt="Sigma Logo" loading="lazy"></div>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav-link" href="#services">Service</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav-link" href="#about-us">Our Team</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
