@@ -102,7 +102,7 @@
 .list-box {
   box-shadow: 0px 0px 10px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02, 2px 2px 5px $blackOp02, 0px 0px 0px $blackOp02, 0px 0px 0px $blackOp02;
   background-color: $white;
-  padding: 30px 15px;
+  padding: 20px 15px;
   height: fit-content;
   border-radius: 7px;
   color: $black;
@@ -111,7 +111,7 @@
   transition: all 0.3 ease-in;
 
   @include mobile {
-    padding: 20px 10px;
+    padding: 10px 10px;
   }
 }
 
@@ -120,6 +120,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 10px 0;
 
   @include laptop-sm {
     font-size: 22px;
@@ -173,6 +174,10 @@
     max-height: 9999px;
     transition-timing-function: cubic-bezier(0.5, 0, 1, 0); 
   }
+}
+
+.list-box__ul--p {
+  font-size: 18px;
 }
 
 .list-box__ul--flex {
