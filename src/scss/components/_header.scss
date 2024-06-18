@@ -97,6 +97,10 @@
       @include exceptMobile {
         display: block;
       }
+
+      @include mobile {
+        right: 0px;
+      }
     }
   }
 
@@ -150,11 +154,31 @@
 
   &.active {
     top: 70px;
+
+    @include mobile {
+      top: 5%;
+    }
   }
+
+  @include mobile {
+    left: unset;
+    top: 5%;
+    padding: 10px 15px;
+    transform: translateY(-50%);
+    right:  -1200px;
+    border-radius: 7px;
+    display: flex;
+    gap: 15px;
+  }
+  
 }
 
 .nav__submenu-item {
   margin-bottom: 20px;
+
+  @include mobile {
+    margin-bottom: 0px;
+  }
 
   &:last-child {
     margin-bottom: 0px;
