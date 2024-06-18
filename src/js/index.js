@@ -25,7 +25,7 @@ hamburger.addEventListener('click', ()=> {
 
 // Hide menu after chosing nav link
 navLink.forEach(link => {
-  nav.addEventListener("click", () => {
+  link.addEventListener("click", () => {
     hamburger.classList.remove("header__hamburger--open");
     nav.classList.remove("header__hamburger--open")
   })
