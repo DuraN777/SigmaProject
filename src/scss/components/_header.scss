@@ -109,13 +109,13 @@
 
   @include mobile {
     padding: 0 0 20px 10px ;
-    font-size: 20px;
+    font-size: 18px;
     border-bottom: solid 2px grey;
     margin-bottom: 10px;
 
     &.active {
       padding: 0 0 20px 10px ;
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 }
